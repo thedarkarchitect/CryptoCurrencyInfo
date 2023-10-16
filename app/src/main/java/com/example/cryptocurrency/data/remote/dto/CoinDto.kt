@@ -1,7 +1,8 @@
 package com.example.cryptocurrency.data.remote.dto
 
 
-import com.example.cryptocurrency.domain.model.Coin
+
+import com.example.cryptocurrency.domain.model.Coins
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -23,8 +24,8 @@ data class CoinDto(
     val type: String
 )
 
-fun CoinDto.toCoin(): Coin {
-    return Coin(
+fun CoinDto.toCoin(): Coins {
+    return Coins(
         id = id,
         isActive = isActive,
         name = name,

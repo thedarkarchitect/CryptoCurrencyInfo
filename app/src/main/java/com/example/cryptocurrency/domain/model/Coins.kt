@@ -1,6 +1,6 @@
 package com.example.cryptocurrency.domain.model
 
-data class Coin(
+data class Coins(
     val id: String,
     val isActive: Boolean,
     val name: String,
